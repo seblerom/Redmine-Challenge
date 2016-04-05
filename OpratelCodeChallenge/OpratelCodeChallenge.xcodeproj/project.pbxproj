@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C16BCD011CB43F6D00D083B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16BCD001CB43F6D00D083B0 /* AppDelegate.swift */; };
+		C16BCD031CB43F6D00D083B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16BCD021CB43F6D00D083B0 /* ViewController.swift */; };
+		C16BCD061CB43F6D00D083B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16BCD041CB43F6D00D083B0 /* Main.storyboard */; };
+		C16BCD081CB43F6E00D083B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C16BCD071CB43F6E00D083B0 /* Assets.xcassets */; };
+		C16BCD0B1CB43F6E00D083B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16BCD091CB43F6E00D083B0 /* LaunchScreen.storyboard */; };
+		C16BCD151CB43F9600D083B0 /* OpenSans-CondLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C16BCD131CB43F9600D083B0 /* OpenSans-CondLight.ttf */; };
+		C16BCD161CB43F9600D083B0 /* OpenSans-CondBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C16BCD141CB43F9600D083B0 /* OpenSans-CondBold.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C16BCCFD1CB43F6D00D083B0 /* OpratelCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpratelCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C16BCD001CB43F6D00D083B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C16BCD021CB43F6D00D083B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C16BCD051CB43F6D00D083B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C16BCD071CB43F6E00D083B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C16BCD0A1CB43F6E00D083B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C16BCD0C1CB43F6E00D083B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C16BCD131CB43F9600D083B0 /* OpenSans-CondLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondLight.ttf"; path = "../../../../Downloads/OpenSans-CondLight.ttf"; sourceTree = "<group>"; };
+		C16BCD141CB43F9600D083B0 /* OpenSans-CondBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondBold.ttf"; path = "../../../../Downloads/OpenSans-CondBold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C16BCCFA1CB43F6D00D083B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C16BCCF41CB43F6D00D083B0 = {
+			isa = PBXGroup;
+			children = (
+				C16BCCFF1CB43F6D00D083B0 /* OpratelCodeChallenge */,
+				C16BCCFE1CB43F6D00D083B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C16BCCFE1CB43F6D00D083B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C16BCCFD1CB43F6D00D083B0 /* OpratelCodeChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C16BCCFF1CB43F6D00D083B0 /* OpratelCodeChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				C16BCD121CB43F8000D083B0 /* Resources */,
+				C16BCD001CB43F6D00D083B0 /* AppDelegate.swift */,
+				C16BCD021CB43F6D00D083B0 /* ViewController.swift */,
+				C16BCD041CB43F6D00D083B0 /* Main.storyboard */,
+				C16BCD071CB43F6E00D083B0 /* Assets.xcassets */,
+				C16BCD091CB43F6E00D083B0 /* LaunchScreen.storyboard */,
+				C16BCD0C1CB43F6E00D083B0 /* Info.plist */,
+			);
+			path = OpratelCodeChallenge;
+			sourceTree = "<group>";
+		};
+		C16BCD121CB43F8000D083B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C16BCD131CB43F9600D083B0 /* OpenSans-CondLight.ttf */,
+				C16BCD141CB43F9600D083B0 /* OpenSans-CondBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C16BCCFC1CB43F6D00D083B0 /* OpratelCodeChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C16BCD0F1CB43F6E00D083B0 /* Build configuration list for PBXNativeTarget "OpratelCodeChallenge" */;
+			buildPhases = (
+				C16BCCF91CB43F6D00D083B0 /* Sources */,
+				C16BCCFA1CB43F6D00D083B0 /* Frameworks */,
+				C16BCCFB1CB43F6D00D083B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpratelCodeChallenge;
+			productName = OpratelCodeChallenge;
+			productReference = C16BCCFD1CB43F6D00D083B0 /* OpratelCodeChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C16BCCF51CB43F6D00D083B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = seblerom;
+				TargetAttributes = {
+					C16BCCFC1CB43F6D00D083B0 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6389YLWL2N;
+					};
+				};
+			};
+			buildConfigurationList = C16BCCF81CB43F6D00D083B0 /* Build configuration list for PBXProject "OpratelCodeChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C16BCCF41CB43F6D00D083B0;
+			productRefGroup = C16BCCFE1CB43F6D00D083B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C16BCCFC1CB43F6D00D083B0 /* OpratelCodeChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C16BCCFB1CB43F6D00D083B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16BCD0B1CB43F6E00D083B0 /* LaunchScreen.storyboard in Resources */,
+				C16BCD081CB43F6E00D083B0 /* Assets.xcassets in Resources */,
+				C16BCD161CB43F9600D083B0 /* OpenSans-CondBold.ttf in Resources */,
+				C16BCD151CB43F9600D083B0 /* OpenSans-CondLight.ttf in Resources */,
+				C16BCD061CB43F6D00D083B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C16BCCF91CB43F6D00D083B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16BCD031CB43F6D00D083B0 /* ViewController.swift in Sources */,
+				C16BCD011CB43F6D00D083B0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C16BCD041CB43F6D00D083B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C16BCD051CB43F6D00D083B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C16BCD091CB43F6E00D083B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C16BCD0A1CB43F6E00D083B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C16BCD0D1CB43F6E00D083B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C16BCD0E1CB43F6E00D083B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C16BCD101CB43F6E00D083B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = OpratelCodeChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ar.com.seblerom.OpratelCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C16BCD111CB43F6E00D083B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = OpratelCodeChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ar.com.seblerom.OpratelCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C16BCCF81CB43F6D00D083B0 /* Build configuration list for PBXProject "OpratelCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C16BCD0D1CB43F6E00D083B0 /* Debug */,
+				C16BCD0E1CB43F6E00D083B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C16BCD0F1CB43F6E00D083B0 /* Build configuration list for PBXNativeTarget "OpratelCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C16BCD101CB43F6E00D083B0 /* Debug */,
+				C16BCD111CB43F6E00D083B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C16BCCF51CB43F6D00D083B0 /* Project object */;
+}
