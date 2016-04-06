@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		5D26C566B2DA70E799C77F66 /* Pods_OpratelCodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFB4B6BCA89EB442DA000E5 /* Pods_OpratelCodeChallenge.framework */; };
 		C16BCD011CB43F6D00D083B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16BCD001CB43F6D00D083B0 /* AppDelegate.swift */; };
-		C16BCD031CB43F6D00D083B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16BCD021CB43F6D00D083B0 /* ViewController.swift */; };
 		C16BCD061CB43F6D00D083B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16BCD041CB43F6D00D083B0 /* Main.storyboard */; };
 		C16BCD081CB43F6E00D083B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C16BCD071CB43F6E00D083B0 /* Assets.xcassets */; };
 		C16BCD0B1CB43F6E00D083B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16BCD091CB43F6E00D083B0 /* LaunchScreen.storyboard */; };
 		C16BCD151CB43F9600D083B0 /* OpenSans-CondLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C16BCD131CB43F9600D083B0 /* OpenSans-CondLight.ttf */; };
 		C16BCD161CB43F9600D083B0 /* OpenSans-CondBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C16BCD141CB43F9600D083B0 /* OpenSans-CondBold.ttf */; };
+		C1950CBD1CB57CBC00059981 /* ConnectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1950CBC1CB57CBC00059981 /* ConnectionRouter.swift */; };
+		C1950CC21CB5915500059981 /* IssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1950CC11CB5915500059981 /* IssueModel.swift */; };
+		C1EB8CA71CB55ED700E31FD2 /* Redmine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EB8CA61CB55ED700E31FD2 /* Redmine.swift */; };
+		C1EB8CA91CB55FAC00E31FD2 /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EB8CA81CB55FAC00E31FD2 /* BasicCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +25,17 @@
 		8EC1AA66FBE5A7E852148680 /* Pods-OpratelCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpratelCodeChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpratelCodeChallenge/Pods-OpratelCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		C16BCCFD1CB43F6D00D083B0 /* OpratelCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpratelCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16BCD001CB43F6D00D083B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C16BCD021CB43F6D00D083B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C16BCD051CB43F6D00D083B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C16BCD071CB43F6E00D083B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C16BCD0A1CB43F6E00D083B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C16BCD0C1CB43F6E00D083B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C16BCD131CB43F9600D083B0 /* OpenSans-CondLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondLight.ttf"; path = "../../../../Downloads/OpenSans-CondLight.ttf"; sourceTree = "<group>"; };
 		C16BCD141CB43F9600D083B0 /* OpenSans-CondBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondBold.ttf"; path = "../../../../Downloads/OpenSans-CondBold.ttf"; sourceTree = "<group>"; };
+		C1950CBC1CB57CBC00059981 /* ConnectionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionRouter.swift; sourceTree = "<group>"; };
+		C1950CC11CB5915500059981 /* IssueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueModel.swift; sourceTree = "<group>"; };
+		C1EB8CA61CB55ED700E31FD2 /* Redmine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Redmine.swift; sourceTree = "<group>"; };
+		C1EB8CA81CB55FAC00E31FD2 /* BasicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
+		C1EB8CAE1CB5759D00E31FD2 /* OpratelCodeChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpratelCodeChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		FAFB4B6BCA89EB442DA000E5 /* Pods_OpratelCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpratelCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				C16BCD001CB43F6D00D083B0 /* AppDelegate.swift */,
+				C1950CBC1CB57CBC00059981 /* ConnectionRouter.swift */,
+				C1950CC01CB5901400059981 /* Model */,
 				C1C364BF1CB44F0300D865E9 /* Views */,
 				C1C364BE1CB44EF000D865E9 /* Controllers */,
 				C16BCD121CB43F8000D083B0 /* Resources */,
@@ -100,10 +109,19 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		C1950CC01CB5901400059981 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1950CC11CB5915500059981 /* IssueModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		C1C364BE1CB44EF000D865E9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C16BCD021CB43F6D00D083B0 /* ViewController.swift */,
+				C1EB8CA61CB55ED700E31FD2 /* Redmine.swift */,
+				C1EB8CA81CB55FAC00E31FD2 /* BasicCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -120,6 +138,7 @@
 		C1C364C01CB44F4500D865E9 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				C1EB8CAE1CB5759D00E31FD2 /* OpratelCodeChallenge-Bridging-Header.h */,
 				C16BCD071CB43F6E00D083B0 /* Assets.xcassets */,
 				C16BCD0C1CB43F6E00D083B0 /* Info.plist */,
 			);
@@ -251,7 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C16BCD031CB43F6D00D083B0 /* ViewController.swift in Sources */,
+				C1EB8CA71CB55ED700E31FD2 /* Redmine.swift in Sources */,
+				C1EB8CA91CB55FAC00E31FD2 /* BasicCell.swift in Sources */,
+				C1950CBD1CB57CBC00059981 /* ConnectionRouter.swift in Sources */,
+				C1950CC21CB5915500059981 /* IssueModel.swift in Sources */,
 				C16BCD011CB43F6D00D083B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +341,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -358,6 +381,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -371,8 +395,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OpratelCodeChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = ar.com.seblerom.OpratelCodeChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpratelCodeChallenge/OpratelCodeChallenge-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 			};
 			name = Debug;
 		};
@@ -384,8 +411,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OpratelCodeChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = ar.com.seblerom.OpratelCodeChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OpratelCodeChallenge/OpratelCodeChallenge-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 			};
 			name = Release;
 		};

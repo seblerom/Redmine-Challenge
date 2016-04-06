@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D05B2C30E48FD0751CEF582F'
+               BlueprintIdentifier = '536EE1323A648B330179F414'
                BlueprintName = 'Pods-OpratelCodeChallenge'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_OpratelCodeChallenge.framework'>
