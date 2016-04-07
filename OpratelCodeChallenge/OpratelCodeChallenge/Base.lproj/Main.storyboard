@@ -104,13 +104,13 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a04-LO-Dgu">
                                                     <rect key="frame" x="62" y="8" width="518" height="24"/>
                                                     <fontDescription key="fontDescription" name="OpenSans-CondensedBold" family="Open Sans Condensed" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swP-QP-avH">
                                                     <rect key="frame" x="62" y="32" width="518" height="24"/>
                                                     <fontDescription key="fontDescription" name="OpenSans-CondensedLight" family="Open Sans" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -151,6 +151,7 @@
                                             <outlet property="labelSubject" destination="a04-LO-Dgu" id="o8E-4H-HRW"/>
                                             <outlet property="viewDate" destination="VQR-Sa-ThE" id="6op-rJ-NH4"/>
                                             <outlet property="viewStick" destination="R2h-fl-C1b" id="bEM-Ur-3dv"/>
+                                            <segue destination="dSS-ao-r2U" kind="show" id="DQR-db-E2h"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -178,30 +179,30 @@
                     </view>
                     <navigationItem key="navigationItem" title="REDMINE MINI" id="ezY-ZM-0wI"/>
                     <connections>
-                        <outlet property="tableview" destination="rUI-d6-i9i" id="rKW-Zw-dVS"/>
+                        <outlet property="tableview" destination="rUI-d6-i9i" id="JU6-hD-Ne6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAB-j2-t82" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1734" y="161"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="5vL-O6-VAK">
+        <!--Redmine Detail-->
+        <scene sceneID="WWZ-yN-JXg">
             <objects>
-                <viewController id="VTl-3O-pgW" sceneMemberID="viewController">
+                <viewController id="dSS-ao-r2U" customClass="RedmineDetail" customModule="OpratelCodeChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hVK-K0-2zt"/>
-                        <viewControllerLayoutGuide type="bottom" id="MWg-PW-lLe"/>
+                        <viewControllerLayoutGuide type="top" id="pGK-tM-Agf"/>
+                        <viewControllerLayoutGuide type="bottom" id="UoF-ur-Ert"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Tzk-u0-CXP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="yvk-cx-ECd">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fUT-hF-z4I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ims-TM-W5v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3106" y="161"/>
+            <point key="canvasLocation" x="2404" y="161"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Kdq-6c-OaZ">

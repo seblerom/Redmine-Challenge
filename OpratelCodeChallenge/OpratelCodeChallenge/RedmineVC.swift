@@ -10,7 +10,7 @@ import UIKit
 import MBProgressHUD
 import Alamofire
 
-class RedmivarC: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class RedmineVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
     
     @IBOutlet weak var tableview: UITableView!
