@@ -16,7 +16,8 @@
 		C16BCD161CB43F9600D083B0 /* OpenSans-CondBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C16BCD141CB43F9600D083B0 /* OpenSans-CondBold.ttf */; };
 		C1950CBD1CB57CBC00059981 /* ConnectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1950CBC1CB57CBC00059981 /* ConnectionRouter.swift */; };
 		C1950CC21CB5915500059981 /* IssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1950CC11CB5915500059981 /* IssueModel.swift */; };
-		C1EB8CA71CB55ED700E31FD2 /* Redmine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EB8CA61CB55ED700E31FD2 /* Redmine.swift */; };
+		C1C72E9F1CB6CD3F00746827 /* RedmineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C72E9E1CB6CD3F00746827 /* RedmineVC.swift */; };
+		C1C72EA41CB7027600746827 /* RedmineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C72EA31CB7027600746827 /* RedmineDetail.swift */; };
 		C1EB8CA91CB55FAC00E31FD2 /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EB8CA81CB55FAC00E31FD2 /* BasicCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +34,8 @@
 		C16BCD141CB43F9600D083B0 /* OpenSans-CondBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondBold.ttf"; path = "../../../../Downloads/OpenSans-CondBold.ttf"; sourceTree = "<group>"; };
 		C1950CBC1CB57CBC00059981 /* ConnectionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionRouter.swift; sourceTree = "<group>"; };
 		C1950CC11CB5915500059981 /* IssueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueModel.swift; sourceTree = "<group>"; };
-		C1EB8CA61CB55ED700E31FD2 /* Redmine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Redmine.swift; sourceTree = "<group>"; };
+		C1C72E9E1CB6CD3F00746827 /* RedmineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedmineVC.swift; sourceTree = "<group>"; };
+		C1C72EA31CB7027600746827 /* RedmineDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedmineDetail.swift; sourceTree = "<group>"; };
 		C1EB8CA81CB55FAC00E31FD2 /* BasicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
 		C1EB8CAE1CB5759D00E31FD2 /* OpratelCodeChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpratelCodeChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		FAFB4B6BCA89EB442DA000E5 /* Pods_OpratelCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpratelCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,8 +122,9 @@
 		C1C364BE1CB44EF000D865E9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C1EB8CA61CB55ED700E31FD2 /* Redmine.swift */,
-				C1EB8CA81CB55FAC00E31FD2 /* BasicCell.swift */,
+				C1C72EA01CB6FFEB00746827 /* Cells */,
+				C1C72E9E1CB6CD3F00746827 /* RedmineVC.swift */,
+				C1C72EA31CB7027600746827 /* RedmineDetail.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -143,6 +146,14 @@
 				C16BCD0C1CB43F6E00D083B0 /* Info.plist */,
 			);
 			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		C1C72EA01CB6FFEB00746827 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C1EB8CA81CB55FAC00E31FD2 /* BasicCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1EB8CA71CB55ED700E31FD2 /* Redmine.swift in Sources */,
+				C1C72E9F1CB6CD3F00746827 /* RedmineVC.swift in Sources */,
 				C1EB8CA91CB55FAC00E31FD2 /* BasicCell.swift in Sources */,
+				C1C72EA41CB7027600746827 /* RedmineDetail.swift in Sources */,
 				C1950CBD1CB57CBC00059981 /* ConnectionRouter.swift in Sources */,
 				C1950CC21CB5915500059981 /* IssueModel.swift in Sources */,
 				C16BCD011CB43F6D00D083B0 /* AppDelegate.swift in Sources */,

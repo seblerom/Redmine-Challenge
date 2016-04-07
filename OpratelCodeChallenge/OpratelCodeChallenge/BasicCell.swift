@@ -21,7 +21,7 @@ class BasicCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.viewDate.layer.cornerRadius = CGRectGetWidth(self.viewDate.frame)/4.0
+        self.viewDate.layer.cornerRadius = CGRectGetWidth(self.viewDate.frame)/2
         self.viewDate.layer.masksToBounds = true
     }
 
