@@ -11,7 +11,6 @@ import Foundation
 class IssueModel{
     
     var author:IssueModel.Author
-    
     var created_on:NSDate?
     var description:String?
     var done_ratio:Int?
@@ -23,7 +22,6 @@ class IssueModel{
     var subject:String?
     var tracker:IssueModel.Tracker?
     var updated_on:NSDate?
-    
     var assignedTo:IssueModel.AssignedTo?
     var estimated_hours: Int?
     var due_date:String?

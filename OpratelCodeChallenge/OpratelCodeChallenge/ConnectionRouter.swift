@@ -22,7 +22,7 @@ public enum ConnectionRouter: URLRequestConvertible{
             case .Issues:
                 return("json",.GET,[String: AnyObject]())
             case .SingleIssue:
-                let urlExtension = ".json"
+                let urlExtension =  "json"
                 return(urlExtension,.GET,[String: AnyObject]())
             }
         }()

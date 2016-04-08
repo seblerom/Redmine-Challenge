@@ -17,7 +17,6 @@ class RedmineVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     let basicCellIdentifier = "BasicCell"
     var issues = [String: AnyObject]()
     var modelArray:[AnyObject] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
@@ -46,12 +45,12 @@ class RedmineVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     }
     
     func downloadIssues(content:String, completion:(NSArray) -> Void){
-        showProgressHUD()
+        LoadingAnimations.showProgressHUD(self.view)
         Alamofire.request(ConnectionRouter.Issues(content))
             .responseJSON { response in
                 guard response.result.isSuccess else{
                     print("Error while fetching all issues: \(response.result.error)")
-                    self.hideProgressHUD()
+                    LoadingAnimations.hideProgressHUD(self.view)
                     completion([NSArray]())
                     return
                 }
@@ -78,9 +77,8 @@ class RedmineVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
                             assigned = IssueModel.AssignedTo(id: 0, name: "")
                         }
                         
-                        let createdOn = self.StringToDate(singleIssue.valueForKey("created_on")as! String)
-                        let updatedOn = self.StringToDate(singleIssue.valueForKey("updated_on")as! String)
-                        
+                        let createdOn = DateManagement.StringToDate(singleIssue.valueForKey("created_on")as! String)
+                        let updatedOn = DateManagement.StringToDate(singleIssue.valueForKey("updated_on")as! String)
                         
                         var hours:Int
                         if (singleIssue.valueForKey("estimated_hours") != nil){
@@ -101,27 +99,15 @@ class RedmineVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
                     }
                 }else{
                     print("Invalid data type received")
-                    self.hideProgressHUD()
+                    LoadingAnimations.hideProgressHUD(self.view)
                     completion(NSArray())
                     return
                 }
-                self.hideProgressHUD()
+                LoadingAnimations.hideProgressHUD(self.view)
                 completion(self.modelArray)
         }
     }
-    
-    func StringToDate(dateStringFormat:String) -> NSDate {
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat =  "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-        let date = dateFormatter.dateFromString(dateStringFormat)
-        return date!
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
     // MARK: - Table view data source
 
      func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -157,81 +143,12 @@ class RedmineVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     }
     func setMonthForCell(cell:BasicCell,indexPath:NSIndexPath) {
         let item = self.modelArray[indexPath.row] as! IssueModel
-        cell.labelMonth.text = self.getMonthWithDate(item.created_on!)
+        cell.labelMonth.text =  DateManagement.getMonthWithDate(item.created_on!)
     }
     
     func setDayForCell(cell:BasicCell,indexPath:NSIndexPath) {
         let item = self.modelArray[indexPath.row] as! IssueModel
-        cell.labelDay.text = self.getDayWithDate(item.created_on!)
-    }
-    
-    func getMonthWithDate(date:NSDate) -> String {
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat =  "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-        let date = dateFormatter.stringFromDate(date)
-        let month = self.getMonthAcronym(date)
-        return month
-    }
-    
-    func getDayWithDate(date:NSDate) -> String {
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat =  "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-        let date = dateFormatter.stringFromDate(date)
-        let day = self.getDayForCell(date)
-        return day
-    }
-    
-    func getMonthAcronym(fecha:String) -> String {
-        var dateSplited = fecha.componentsSeparatedByString("-")
-        var month:String
-        
-        switch dateSplited[1] {
-        case "01":
-            month = "ENE"
-            return (month)
-        case "02":
-            month = "FEB"
-            return (month)
-        case "03":
-            month = "MAR"
-            return (month)
-        case "04":
-            month = "APR"
-            return (month)
-        case "05":
-            month = "MAY"
-            return (month)
-        case "06":
-            month = "JUN"
-            return (month)
-        case "07":
-            month = "JUL"
-            return (month)
-        case "08":
-            month = "AUG"
-            return (month)
-        case "09":
-            month = "SEP"
-            return (month)
-        case "10":
-            month = "OCT"
-            return (month)
-        case "11":
-            month = "NOV"
-            return (month)
-        case "12":
-            month = "DIC"
-            return (month)
-        default:
-            return("")
-        }
-    }
-    
-    func getDayForCell(fecha:String) -> String {
-        let date = fecha.stringByReplacingOccurrencesOfString("T", withString: "-")
-        var dateSplited = date.componentsSeparatedByString("-")
-        let day = dateSplited[2]
-        return day
+        cell.labelDay.text = DateManagement.getDayWithDate(item.created_on!)
     }
     
     //Mark NAvigation
@@ -241,18 +158,6 @@ class RedmineVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         let item = self.modelArray[indexPath!.row]
         let redMineDetail = segue.destinationViewController as! RedmineDetail
         redMineDetail.item = item as? IssueModel
-        
     }
-    
-    func showProgressHUD() {
-        let hud = MBProgressHUD.showHUDAddedTo(view, animated: true)
-        hud.labelText = "Loading"
-    }
-    
-    func hideProgressHUD() {
-        MBProgressHUD.hideAllHUDsForView(view, animated: true)
-    }
-    
-    
-
 }
+

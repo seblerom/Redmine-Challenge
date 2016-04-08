@@ -18,6 +18,9 @@
 		C1950CC21CB5915500059981 /* IssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1950CC11CB5915500059981 /* IssueModel.swift */; };
 		C1C72E9F1CB6CD3F00746827 /* RedmineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C72E9E1CB6CD3F00746827 /* RedmineVC.swift */; };
 		C1C72EA41CB7027600746827 /* RedmineDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C72EA31CB7027600746827 /* RedmineDetail.swift */; };
+		C1DD695E1CB82169003A7E1E /* LoadingAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DD695D1CB82169003A7E1E /* LoadingAnimations.swift */; };
+		C1DD69601CB823D1003A7E1E /* DateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DD695F1CB823D1003A7E1E /* DateManagement.swift */; };
+		C1DD69621CB82662003A7E1E /* IssueModelDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DD69611CB82662003A7E1E /* IssueModelDetail.swift */; };
 		C1EB8CA91CB55FAC00E31FD2 /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EB8CA81CB55FAC00E31FD2 /* BasicCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		C1950CC11CB5915500059981 /* IssueModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueModel.swift; sourceTree = "<group>"; };
 		C1C72E9E1CB6CD3F00746827 /* RedmineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedmineVC.swift; sourceTree = "<group>"; };
 		C1C72EA31CB7027600746827 /* RedmineDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedmineDetail.swift; sourceTree = "<group>"; };
+		C1DD695D1CB82169003A7E1E /* LoadingAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAnimations.swift; sourceTree = "<group>"; };
+		C1DD695F1CB823D1003A7E1E /* DateManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManagement.swift; sourceTree = "<group>"; };
+		C1DD69611CB82662003A7E1E /* IssueModelDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueModelDetail.swift; sourceTree = "<group>"; };
 		C1EB8CA81CB55FAC00E31FD2 /* BasicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
 		C1EB8CAE1CB5759D00E31FD2 /* OpratelCodeChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpratelCodeChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		FAFB4B6BCA89EB442DA000E5 /* Pods_OpratelCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpratelCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +104,8 @@
 				C1C364BE1CB44EF000D865E9 /* Controllers */,
 				C16BCD121CB43F8000D083B0 /* Resources */,
 				C1C364C01CB44F4500D865E9 /* Supporting files */,
+				C1DD695D1CB82169003A7E1E /* LoadingAnimations.swift */,
+				C1DD695F1CB823D1003A7E1E /* DateManagement.swift */,
 			);
 			path = OpratelCodeChallenge;
 			sourceTree = "<group>";
@@ -115,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				C1950CC11CB5915500059981 /* IssueModel.swift */,
+				C1DD69611CB82662003A7E1E /* IssueModelDetail.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -283,8 +292,11 @@
 			files = (
 				C1C72E9F1CB6CD3F00746827 /* RedmineVC.swift in Sources */,
 				C1EB8CA91CB55FAC00E31FD2 /* BasicCell.swift in Sources */,
+				C1DD69601CB823D1003A7E1E /* DateManagement.swift in Sources */,
 				C1C72EA41CB7027600746827 /* RedmineDetail.swift in Sources */,
+				C1DD695E1CB82169003A7E1E /* LoadingAnimations.swift in Sources */,
 				C1950CBD1CB57CBC00059981 /* ConnectionRouter.swift in Sources */,
+				C1DD69621CB82662003A7E1E /* IssueModelDetail.swift in Sources */,
 				C1950CC21CB5915500059981 /* IssueModel.swift in Sources */,
 				C16BCD011CB43F6D00D083B0 /* AppDelegate.swift in Sources */,
 			);
