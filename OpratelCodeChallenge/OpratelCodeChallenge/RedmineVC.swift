@@ -154,10 +154,16 @@ class RedmineVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     //Mark NAvigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let indexPath = self.tableview.indexPathForSelectedRow
-        let item = self.modelArray[indexPath!.row]
-        let redMineDetail = segue.destinationViewController as! RedmineDetail
-        redMineDetail.item = item as? IssueModel
+        
+        if segue.identifier == "test" {
+            
+        }else{
+            let indexPath = self.tableview.indexPathForSelectedRow
+            let item = self.modelArray[indexPath!.row]
+            let redMineDetail = segue.destinationViewController as! RedmineDetail
+            redMineDetail.item = item as? IssueModel
+        }
+        
     }
 }
 

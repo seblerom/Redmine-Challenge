@@ -29,6 +29,7 @@ public enum ConnectionRouter: URLRequestConvertible{
         
         let URL = NSURL(string: ConnectionRouter.baseUrlPath)!
         let URLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathExtension(result.path))
+        print(URLRequest)
         URLRequest.HTTPMethod = result.method.rawValue
         URLRequest.timeoutInterval = NSTimeInterval(10 * 1000)
         let encoding = Alamofire.ParameterEncoding.URL
