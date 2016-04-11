@@ -98,14 +98,12 @@
 			isa = PBXGroup;
 			children = (
 				C16BCD001CB43F6D00D083B0 /* AppDelegate.swift */,
-				C1950CBC1CB57CBC00059981 /* ConnectionRouter.swift */,
+				C19A91941CBBE319002550C4 /* Connection */,
 				C1950CC01CB5901400059981 /* Model */,
 				C1C364BF1CB44F0300D865E9 /* Views */,
 				C1C364BE1CB44EF000D865E9 /* Controllers */,
 				C16BCD121CB43F8000D083B0 /* Resources */,
 				C1C364C01CB44F4500D865E9 /* Supporting files */,
-				C1DD695D1CB82169003A7E1E /* LoadingAnimations.swift */,
-				C1DD695F1CB823D1003A7E1E /* DateManagement.swift */,
 			);
 			path = OpratelCodeChallenge;
 			sourceTree = "<group>";
@@ -113,6 +111,7 @@
 		C16BCD121CB43F8000D083B0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C19A91951CBBE33A002550C4 /* Utils */,
 				C16BCD131CB43F9600D083B0 /* OpenSans-CondLight.ttf */,
 				C16BCD141CB43F9600D083B0 /* OpenSans-CondBold.ttf */,
 			);
@@ -126,6 +125,23 @@
 				C1DD69611CB82662003A7E1E /* IssueModelDetail.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		C19A91941CBBE319002550C4 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				C1950CBC1CB57CBC00059981 /* ConnectionRouter.swift */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		C19A91951CBBE33A002550C4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C1DD695D1CB82169003A7E1E /* LoadingAnimations.swift */,
+				C1DD695F1CB823D1003A7E1E /* DateManagement.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		C1C364BE1CB44EF000D865E9 /* Controllers */ = {
